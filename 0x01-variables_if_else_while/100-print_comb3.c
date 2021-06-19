@@ -13,18 +13,21 @@ int main(void)
 	int yLowerLimit = 49;
 	int yUpperLimit = 58;
 
-	while (x < 58)
+	while (x < 58 && yLowerLimit < yUpperLimit)
 	{
 		putchar(x);
 		putchar(y);
-		putchar(comma);
-		putchar(space);
 		y++;
 		if (y == yUpperLimit)
 		{
 			x++;
 			yLowerLimit++;
 			y = yLowerLimit;
+		}
+		if (yLowerLimit != yUpperLimit)
+		{
+			putchar(comma);
+			putchar(space);
 		}
 	}
 	putchar('\n');
