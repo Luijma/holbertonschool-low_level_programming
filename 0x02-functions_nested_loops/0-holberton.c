@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	char holberton[10] = "Holberton";
+	char holberton[] = "Holberton";
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(holberton[i]);
 	}
