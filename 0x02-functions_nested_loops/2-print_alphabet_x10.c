@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "holberton.h"
 void print_alphabet10(void);
 /**
  * print_alphabet10 - prints alphabet in lowercase 10 times
