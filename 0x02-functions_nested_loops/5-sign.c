@@ -1,9 +1,8 @@
 #include "holberton.h"
-/*
- * print_sign - checks if n is + or -
+/**
+ * print_sign - prints if n is + or -
  * @n: number to identify
- * Return: 1 if positive.
- * Returns 0 if 0, -1 if negative
+ * Return: 1 if positive. 0 if 0, -1 if neg
  */
 int print_sign(int n)
 {
