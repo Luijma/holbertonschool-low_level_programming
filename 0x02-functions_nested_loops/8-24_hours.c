@@ -9,7 +9,7 @@ void jack_bauer(void)
 	int y1 = 0;
 	int y2 = 0;
 
-	while (x1 != 3)
+	while (x1 < 3)
 	{
 		_putchar(x1 + '0');
 		_putchar(x2 + '0');
@@ -36,6 +36,8 @@ void jack_bauer(void)
 			x1++;
 			x2 = 0;
 		}
+		if (x1 > 2)
+			break;
 	}
 	_putchar('\n');
 }
