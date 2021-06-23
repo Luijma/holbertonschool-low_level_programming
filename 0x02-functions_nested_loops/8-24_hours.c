@@ -31,7 +31,7 @@ void jack_bauer(void)
 			x2++;
 			y1 = 0;
 		}
-		if (x2 == 10 && x < 3)
+		if (x2 == 10 && x1 < 3)
 		{
 			x1++;
 			x2 = 0;
