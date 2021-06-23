@@ -31,10 +31,11 @@ void jack_bauer(void)
 			x2++;
 			y1 = 0;
 		}
-		if (x2 == 4)
+		if (x1 < 3 && x2 == 4)
 		{
 			x1++;
 			x2 = 0;
 		}
 	}
+	_putchar('\n');
 }
