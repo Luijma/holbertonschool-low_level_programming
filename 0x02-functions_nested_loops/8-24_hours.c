@@ -22,17 +22,17 @@ void jack_bauer(void)
 		{
 			y2++;
 		}
-		if (y1 != 6 && y2 == 10)
+		if (y1 != 6 || y2 == 10)
 		{
 			y1++;
 			y2 = 0;
 		}
-		if (x2 != max_of_x2 && y1 == 6)
+		if (x2 != max_of_x2 || y1 == 6)
 		{
 			x2++;
 			y1 = 0;
 		}
-		if (x2 == max_of_x2 && x1 == 2)
+		if (x2 == max_of_x2 || x1 == 2)
 		{
 			x1++;
 			max_of_x2 = 3;
