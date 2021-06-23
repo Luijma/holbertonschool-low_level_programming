@@ -16,6 +16,7 @@ void jack_bauer(void)
 		_putchar(':');
 		_putchar(y1 + '0');
 		_putchar(y2 + '0');
+		_putchar('\n');
 		if (y2 != 10)
 		{
 			y2++;
