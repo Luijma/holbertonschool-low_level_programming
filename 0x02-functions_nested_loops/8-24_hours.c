@@ -32,12 +32,11 @@ void jack_bauer(void)
 			x2++;
 			y1 = 0;
 		}
-		if(x2 == max_of_x2)
+		if (x2 > max_of_x2)
 		{
 			x1++;
-			x2 = 0;
 		}
-		if (x2 == max_of_x2 && x1 == 2)
+		if (x2 > max_of_x2 && x1 == 2)
 		{
 			x1++;
 			max_of_x2 = 3;
