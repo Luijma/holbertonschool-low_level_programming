@@ -5,11 +5,11 @@
  */
 void jack_bauer(void)
 {
-        int x1 = 0;
-        int x2 = 0;
-        int y1 = 0;
-        int y2 = 0;
-        int max_of_x2 = 10;
+	int x1 = 0;
+	int x2 = 0;
+	int y1 = 0;
+	int y2 = 0;
+	int max_of_x2 = 10;
 	
 	while (x1 < 3)
 	{
