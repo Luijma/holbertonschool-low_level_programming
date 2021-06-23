@@ -8,7 +8,7 @@ void jack_bauer(void)
 	int x2 = 0;
 	int y1 = 0;
 	int y2 = 0;
-	int max_of_x2 = 9;
+	int max_of_x2 = 10;
 
 	while (x1 < 3)
 	{
@@ -27,7 +27,7 @@ void jack_bauer(void)
 			y1++;
 			y2 = 0;
 		}
-		if (x2 <= max_of_x2 && y1 == 6)
+		if (x2 != max_of_x2 && y1 == 6)
 		{
 			x2++;
 			y1 = 0;
