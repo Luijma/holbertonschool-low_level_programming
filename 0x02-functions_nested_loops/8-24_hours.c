@@ -26,18 +26,16 @@ void jack_bauer(void)
 			y1++;
 			y2 = 0;
 		}
-		if (x2 != 4 && y1 == 6)
+		if (x2 != 10 && y1 == 6)
 		{
 			x2++;
 			y1 = 0;
 		}
-		if (x2 == 4)
+		if (x2 == 10 && x < 3)
 		{
 			x1++;
 			x2 = 0;
 		}
-		if (x1 > 2)
-			break;
 	}
 	_putchar('\n');
 }
