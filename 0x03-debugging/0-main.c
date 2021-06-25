@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "holberton.h"
 /**
  * main - auto test for positive_or_negative function
