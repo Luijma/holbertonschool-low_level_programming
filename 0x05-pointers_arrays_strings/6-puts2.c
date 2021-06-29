@@ -5,8 +5,19 @@
  */
 void puts2(char *str)
 {
-	int i = 0;
-	
+	int i;
+	int length = 0;
 
-	for 
+	while (*(str + length))
+	{
+		length++;
+	}
+	for (i = 0; i < length; i++)
+	{
+		if ((i % 2) == 0)
+		{
+			_putchar(*(str + i));
+		}
+	}
+	putchar('\n');
 }
