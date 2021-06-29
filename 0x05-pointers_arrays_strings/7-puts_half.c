@@ -14,14 +14,14 @@ void puts_half(char *str)
 		length++;
 	}
 
-	length -= 1;
+	length--;
 
 	if ((length % 2) == 0)
 	{
 		halfToPrint = length / 2;
 	} else
 	{
-		halfToPrint = (length - 2) / 2;
+		halfToPrint = (length - 1) / 2;
 	}
 	for (i = halfToPrint; i < length; i++)
 		_putchar(*(str + i));
