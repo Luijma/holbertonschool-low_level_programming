@@ -14,8 +14,6 @@ void puts_half(char *str)
 		length++;
 	}
 
-	length--;
-
 	if ((length % 2) == 0)
 	{
 		halfToPrint = length / 2;
