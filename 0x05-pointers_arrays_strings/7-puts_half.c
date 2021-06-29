@@ -5,9 +5,14 @@
  */
 void puts_half(char *str)
 {
-	int length = GetLength(str);
+	int length = 0;
 	int halfToPrint;
 	int i;
+
+	while (*(str + length))
+	{
+		length++;
+	}
 
 	if ((length % 2) == 0)
 	{
