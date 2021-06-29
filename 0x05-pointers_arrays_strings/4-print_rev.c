@@ -8,7 +8,7 @@ void print_rev(char *s)
 	int length = 0;
 	int i;
 	char *endOfString = s;
-	while (*(str + length))
+	while (*(s + length))
 	{
 		length++;
 		endOfString++;
