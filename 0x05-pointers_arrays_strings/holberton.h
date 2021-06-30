@@ -14,5 +14,6 @@ void puts2(char *str);
 void puts_half(char *str);
 int GetLength(char *str);
 void print_rev(char *s);
+char *_strcpy(char *dest, char *src);
 
 #endif /* HOLBERTON_H */
