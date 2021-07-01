@@ -1,7 +1,9 @@
 #include "holberton.h"
 /**
- * REPLACE - prints string followed by new line
- * @str: string to be printed
+ * *_strncat - prints string followed by new line
+ * @dest: destination
+ * @src: source
+ * @n: bytes to print
  */
 char *_strncat(char *dest, char *src, int n)
 {
