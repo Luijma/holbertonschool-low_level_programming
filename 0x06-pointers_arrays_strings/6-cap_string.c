@@ -9,6 +9,7 @@ char *cap_string(char *str)
 	int i;
 	int j = 0;
 	char seperator[] = " \t,;.!?\"(){}\n";
+
 	for (i = 0; str[i]; i++)
 	{
 		for (j = 0; seperator[j]; j++)
