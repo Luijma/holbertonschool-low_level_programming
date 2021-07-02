@@ -14,14 +14,14 @@ char *cap_string(char *str)
 	{
 		for (j = 0; seperator[j]; j++)
 		{
-			if(str[i] == seperator[j])
+			if (str[i] == seperator[j])
 			{
 				if (str[i + 1] <= 'z'
 				&& str[i + 1] >= 'a')
 				{
 					str[i + 1] -= 32;
 				}
-				}
+			}
 		}
 		
 	}
