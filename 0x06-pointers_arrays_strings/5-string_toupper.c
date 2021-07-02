@@ -4,7 +4,7 @@
  * @str: string to be edited
  * Return: pointer to edited string
  */
-char *string_toupper(char * str)
+char *string_toupper(char *str)
 {
 	int i;
 
@@ -13,5 +13,5 @@ char *string_toupper(char * str)
 		if (str[i] <= 122 && str[i] >= 97)
 			str[i] -= 32;
 	}
-	return str;
+	return (str);
 }
