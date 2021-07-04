@@ -7,10 +7,17 @@
 char *leet(char *str)
 {
 	int i;
-	char leet[] = "aAeEoOtTlL";
+	int j;
+	char letter[] = "aAeEoOtTlL";
+	char encryption[] = "4433007711";
 
 	for (i = 0; str[i]; i++)
 	{
-
+		for (j = 0; letter[j]; j++)
+		{
+			if (str[i] == letter[j])
+				str[i] = encryption[j];
+		}
 	}
+	return (str);
 }
