@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * _strstr - locates a substring
  * @haystack: string to search in
@@ -7,10 +9,24 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack && *haystack != *needle; haystack++)
+	int i;
+	int j;
+	int lengthOfNeedle = 0;
+	while(needle[lengthOfNeedle])
 	{
+		lengthOfNeedle++;
 	}
-	if (*haystack == *needle)
-		return (haystack);
+	for (i = 0; haystack[i]; i++)
+	{
+		for(j = 0; needle[j]; j++)
+		{
+			if (haystack[(i + j)] != needle[j])
+				break;
+		}
+		if (lengthOfNeedle == j)
+			return (&(haystack[i]));
+	}
+
 	return (0);
+
 }
