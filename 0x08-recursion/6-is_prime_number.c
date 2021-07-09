@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * primecheck - checks if number is prime)
+ * prime_check - checks if number is prime)
  * @n: number to check
  * @i: divisor
  * Return: 1 if prime, 0 if composite
