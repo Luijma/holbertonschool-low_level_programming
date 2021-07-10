@@ -14,23 +14,23 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for(letter = 0; (argv[i])[letter]; letter++)
+		for (letter = 0; (argv[i])[letter]; letter++)
 		{
-			if((argv[i])[letter] < '0' || (argv[i])[letter] > '9')
+			if ((argv[i])[letter] < '0' || (argv[i])[letter] > '9')
 			{
 				error = 1;
 				break;
 			}
 		}
-		if(error)
+		if (error)
 			break;
 	}
-	if(error)
+	if (error)
 	{
 		printf("Error\n");
 	} else if (argc == 1)
 	{
-		printf ("0\n");
+		printf("0\n");
 	} else
 	{
 		for (i = 1; i < argc; i++)
