@@ -1,9 +1,12 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * main - prints name and path of program
  * Return: 0 on success
+ * @argc: number of arguments
+ * @argv: values of the arguments
  */
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int i;
 
