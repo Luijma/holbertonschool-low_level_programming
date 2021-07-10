@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		for (letter = 0; (*argv)[letter]; letter++)
+		for (letter = 0; (argv[i])[letter]; letter++)
 		{
-			_putchar((*argv)[letter]);
+			_putchar((argv[i])[letter]);
 		}
 		_putchar('\n');
-		argv++;
+		/*argv++;*/
 	}
 	return (0);
 }
