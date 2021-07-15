@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 
-	while (s1 && s2[j])
+	while (s2 && s2[j])
 	{
 		newSize++;
 		j++;
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 		newstr[i] = s1[i];
 		i++;
 	}
-	while (s2[j])
+	while (s2 && s2[j])
 	{
 		newstr[i] = s2[j];
 		i++;
