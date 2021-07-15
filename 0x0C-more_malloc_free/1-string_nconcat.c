@@ -1,0 +1,50 @@
+#include "holberton.h"
+/**
+ * string_noncat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: number of bytes to copy from s2
+ * Return: NULL On failure, otherwise allocated space in memory
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *newString;
+	unsigned int s1Length = 0;
+	unsigned int s2Length = 0;
+	unsigned int newLength = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
+
+	while (s1 && s1[s1Length])
+	{
+		s1Length++;
+	}
+	while (s2 && s2[s2Length])
+	{
+		s2Length++;
+	}
+	if (n >= s2Length)
+		newLength = s2Length + s1Length + 1;
+	else
+		newLength = s1Length + n + 1;
+
+	newString = malloc(sizeof(char) * newLength);
+	if (newString == NULL)
+	{
+		free(newString);
+		return (NULL);
+	}
+	while (s1 && s1[i])
+	{
+		newString[i] = s1[i];
+		i++;
+	}
+	while (s2 && i < newLength)
+	{
+		newString[i] = s2[j];
+		i++;
+		j++;
+	}
+	newString[i] = '\0';
+	return (newString);
+}
