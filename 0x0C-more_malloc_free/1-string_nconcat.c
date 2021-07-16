@@ -23,10 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2Length++;
 	}
-	if (n >= s2Length)
+	if (s2 && n >= s2Length)
 		newLength = s2Length + s1Length + 1;
 	else
-		newLength = s1Length + n + 1;
+		newLength = s1Length + n;
 
 	newString = malloc(sizeof(char) * newLength);
 	if (newString == NULL)
