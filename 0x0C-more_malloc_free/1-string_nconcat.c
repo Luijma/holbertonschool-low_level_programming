@@ -24,11 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2Length++;
 	}
 	if (s2 && n >= s2Length)
-		newLength = s2Length + s1Length + 1;
+		newLength = s2Length + s1Length;
 	else
 		newLength = s1Length + n;
 
-	newString = malloc(sizeof(char) * newLength);
+	newString = malloc(sizeof(char) * newLength + 1);
 	if (newString == NULL)
 	{
 		free(newString);
