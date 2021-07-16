@@ -12,10 +12,10 @@ int main(void)
     char *concat;
 	char *concatEmpty;
 
-    concat = string_nconcat("Holberton", "School-!!!", 6);
-	concatEmpty = string_nconcat("potato", NULL, 3);
+    concat = string_nconcat("Holberton ", "School-!!!", 6);
+	concatEmpty = string_nconcat("First ", "asdfasdfasdfasdf", 5);
     printf("%s\n", concat);
-	printf("%s\n", concatEmpty);
+	printf("%s***\n", concatEmpty);
 
 	free(concatEmpty);
 	free(concat);
