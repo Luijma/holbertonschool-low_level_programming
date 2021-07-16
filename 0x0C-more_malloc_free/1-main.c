@@ -13,7 +13,7 @@ int main(void)
 	char *concatEmpty;
 
     concat = string_nconcat("Holberton", "School-!!!", 6);
-	concatEmpty = string_nconcat("", "", 3);
+	concatEmpty = string_nconcat("potato", NULL, 3);
     printf("%s\n", concat);
 	printf("%s\n", concatEmpty);
 
