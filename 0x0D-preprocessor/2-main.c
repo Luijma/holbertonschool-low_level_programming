@@ -6,8 +6,8 @@
  * @argv: pointer to arguments
  * Return: 0 on success
  */
-int main (__attribute__((unused))int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", *argv);
+	printf("%s\n",__BASE_FILE__);
 	return (0);
 }
