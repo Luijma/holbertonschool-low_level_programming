@@ -22,23 +22,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	pup = malloc(sizeof(dog_t));
-	if(pup == NULL)
+	if (pup == NULL)
 		return (NULL);
 
 	nameLength = GetSize(name);
 	ownerLength = GetSize(owner);
 
-	name_copy = malloc(sizeof(char) * (nameLength + 1));
-	
-	if(!name_copy)
+	name_copy = malloc(sizeof(char) * nameLength);
+
+	if (!name_copy)
 	{
 		free(pup);
 		return (NULL);
 	}
-	
-	owner_copy = malloc(sizeof(char) * (ownerLength + 1));
 
-	if(!owner_copy)
+	owner_copy = malloc(sizeof(char) * ownerLength);
+
+	if (!owner_copy)
 	{
 		free(pup);
 		free(name_copy);
@@ -77,9 +77,10 @@ unsigned int GetSize(char *str)
 {
 	int size = 0;
 
-	while(str[size])
+	while (str[size])
 	{
 		size++;
 	}
+	size++;
 	return (size);
 }
