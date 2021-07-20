@@ -11,6 +11,9 @@ struct dog
 	char *name;
 	float *age;
 	char *owner;
-}
+};
+/**
+ * dog - typedef for dog
+ */
 typedef struct dog dog;
 #endif /* DOG_H */
