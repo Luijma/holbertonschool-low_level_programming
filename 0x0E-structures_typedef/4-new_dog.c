@@ -8,8 +8,9 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *pup = malloc(sizeof(*pup));
+	dog_t *pup;
 
+	pup = malloc(sizeof(dog_t));
 	if(pup == NULL)
 		return (NULL);
 
