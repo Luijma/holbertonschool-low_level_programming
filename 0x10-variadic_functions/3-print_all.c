@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_start(argl, format);
 	while (format[i])
 	{
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(argl, int));
