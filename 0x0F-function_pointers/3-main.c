@@ -2,13 +2,12 @@
 /**
  * main - function that performs calculation based on input
  * Return: 0 on success
- * argc - number of arguments passed
- * argv - array of string arguments passed
+ * @argc: number of arguments passed
+ * @argv: array of string arguments passed
  */
-int main (int argc, int *argv[])
+int main(int argc, char **argv)
 {
-	int *(operation)(int, int);
-	char *operator;
+	int (*fpointer)(int, int);
 	int a;
 	int b;
 	int result;
@@ -22,25 +21,22 @@ int main (int argc, int *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	/* Sets Operator */
-	*operator = argv[2];
-
-	if ((*operator == "/" || *operator == "%")
+	if ((*argv[2] == '/' || *argv[2] == '%')
 			&& (a == 0 || b == 0))
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
 
-	operation = get_op_func(operator);
-	if (operation == NULL)
+	fpointer = get_op_func(argv[2]);
+	if (fpointer == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
-	result = operation(a, b);
+	result = fpointer(a, b);
 
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }

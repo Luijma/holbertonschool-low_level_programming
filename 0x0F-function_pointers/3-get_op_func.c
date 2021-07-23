@@ -1,8 +1,7 @@
 #include "3-calc.h"
 /**
  * get_op_func - function that assigns correct function to pointer
- * @a: first number
- * @b: second number
+ * @s: operator
  * Return: Result of operation
  */
 int (*get_op_func(char *s))(int, int)
@@ -19,7 +18,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op != NULL)
 	{
-		if (ops[i].op == *s)
+		if ((*ops[i].op) == *s)
 		{
 			return (ops[i].f);
 		}
