@@ -15,13 +15,13 @@ void print_all(const char * const format, ...)
 		switch(format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(argl, int);
+				printf("%c", va_arg(argl, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(argl, int);
+				printf("%d", va_arg(argl, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(argl double);
+				printf("%f", va_arg(argl, double));
 				break;
 			case 's':
 				str = va_arg(argl, char *);
