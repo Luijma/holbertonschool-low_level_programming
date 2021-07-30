@@ -16,9 +16,9 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		} else
 		{
-			printf("[%i] %s\n", temp->length, temp->str);
+			printf("[%i] %s\n", temp->len, temp->str);
 			i++;
 		}
 	}
-	return (length);
+	return (count);
 }
