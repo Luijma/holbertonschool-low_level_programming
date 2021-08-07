@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_listint - frees up the space for linked list members
+ * free_listint2 - frees up the space for linked list members
  * @head: head of the list
  */
 void free_listint2(listint_t **head)
@@ -13,4 +13,5 @@ void free_listint2(listint_t **head)
 		*head = temp->next;
 		free(temp);
 	}
+	free(*head);
 }
