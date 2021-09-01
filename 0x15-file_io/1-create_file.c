@@ -22,6 +22,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		txtlength++;
 	}
+	txtlength++;
 	printed = write(fd, text_content, txtlength);
 	if (printed == -1)
 		return (-1);
