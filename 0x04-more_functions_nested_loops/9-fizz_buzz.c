@@ -4,7 +4,7 @@
  * main - fizz buzz function
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	int n;
 
