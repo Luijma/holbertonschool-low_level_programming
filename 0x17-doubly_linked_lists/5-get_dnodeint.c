@@ -1,25 +1,22 @@
 #include "lists.h"
 /**
- * get_dnodeint_at_index - returns node in index
- * @head: head of the list to check index for
- * @index: index of node to return
- * Return: the node at index, NULL if it doesn't exist
+ * get_dnodeint_at_index - gets node in index
+ * @head: head of list
+ * @index: index to search for
+ * Return: node, or NULL if it doesnt exist
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int i;
-	dlistint_t *node;
+	dlistint_t *temp = head;
+	unsigned int i = 0;
 
-	if (!head)
-		return (NULL);
-
-	node = head;
-
-	for (i = 0; i < index; i++)
+	while (temp != NULL)
 	{
-		if (node->next == NULL)
-			return (NULL);
-		node = node->next;
+		if (i == index)
+			return (temp);
+		i++;
+		temp = temp->next;
 	}
-	return (node);
+
+	return (NULL);
 }
