@@ -13,8 +13,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head,
 
 	if (!head)
 		return (NULL);
-	if (index < 0)
-		return (NULL);
 
 	node = head;
 
