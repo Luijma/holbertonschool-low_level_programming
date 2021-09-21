@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - insert node in position
- * @h: head of list
+ * @head: head of list
  * @idx: index to insert
  * @n: number node holds
  * Return: NULL if impossible
@@ -44,6 +44,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 	new_node->prev->next = new_node;
 	return (new_node);
 }
+/**
+ * get_dnodeint_at_index- gets node at index
+ * @head: head of list
+ * @index: index
+ * Return: NULL if failure
+ */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *temp = head;
