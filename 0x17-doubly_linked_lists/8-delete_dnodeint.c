@@ -30,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		printf("BEFORE POINTER MANIPULATION INDEX 0\n\n");
 		*head = temp->next;
-	} else if (index == length)
+	} else if (index == length - 1)
 	{
 		temp->prev->next = NULL;
 		printf("INSIDE INDEX == LENGTH\n\n");
