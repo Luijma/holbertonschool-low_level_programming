@@ -29,9 +29,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 
 	if (idx == 0)
 		return (add_dnodeint(head, n));
-	if (idx == length - 1)
+	if (idx == length)
 		return (add_dnodeint_end(head, n));
-	if (idx > length - 1)
+	if (idx > length)
 	{
 		free(new_node);
 		return (NULL);
