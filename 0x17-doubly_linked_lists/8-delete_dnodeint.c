@@ -28,17 +28,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	temp = get_node_indexed(*head, index);
 	if (index == 0)
 	{
-		printf("BEFORE POINTER MANIPULATION INDEX 0\n\n");
 		*head = temp->next;
 	} else if (index == length - 1)
 	{
 		temp->prev->next = NULL;
-		printf("INSIDE INDEX == LENGTH\n\n");
 	} else
 	{
 		temp->prev->next = temp->next;
 		temp->next->prev = temp->prev;
-		printf("INSIDE FINAL ELSE\n\n");
 	}
 	free(temp);
 	return (1);
