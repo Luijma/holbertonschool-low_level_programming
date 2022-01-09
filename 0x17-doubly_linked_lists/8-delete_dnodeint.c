@@ -20,7 +20,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		temp = temp->next;
 	}
 	/* Edge cases for nonexistant nodes */
-	if (index > length)
+	if (index >= length)
 		return (-1);
 
 	/* deletion process */
